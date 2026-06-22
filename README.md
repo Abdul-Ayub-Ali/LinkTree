@@ -29,6 +29,7 @@ Ensure you have **Node.js** (v18+) and **MongoDB** installed locally on your ope
 2. npm install
 3. npm run dev
 
+```
 ## 🚀 Key Architectural Features Implemented
 - **App & Server Separation:** Decoupled `app.js` (configurations/middlewares) and `server.js` (execution/database connection) for high scalability and clean testing.
 - **Strict Environment Guard:** Runtime `.env` validation using **Zod** schema to catch missing configuration tokens before the server spins up.
@@ -36,3 +37,12 @@ Ensure you have **Node.js** (v18+) and **MongoDB** installed locally on your ope
 - **Unified Constants:** Centralized global states like database naming conventions and unified HTTP codes inside `src/constants/`.
 
 ---
+
+## 📊 Current Development Checklist
+- [x] Folder Architecture Layering
+- [x] Zod Runtime Environment Schema Mapping
+- [x] Global Response/Error Utility Matrix
+- [x] Monorepo Base Setup Core Completed
+- [x] User Model Schema & Password Encryption Hook Setup (`bcrypt`)
+- [ ] Zod Request Body Validation Middleware
+- [ ] Authentication Controllers & JWT Flow (Access/Refresh Tokens)
